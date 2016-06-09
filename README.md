@@ -1,3 +1,5 @@
+[![](https://imagelayers.io/badge/rferrazz/cutedriver:latest.svg)](https://imagelayers.io/?images=rferrazz/cutedriver:latest 'Get your own badge on imagelayers.io')
+
 Enviroment to run functional tests for Qt applications using cuTeDriver, a fork of TDriver from Nomovok, for more info: https://github.com/nomovok-opensource/cutedriver-agent_qt/wiki
 
 ## How to run tests
