@@ -8,9 +8,10 @@ ADD https://github.com/nomovok-opensource/cutedriver-driver/archive/master.tar.g
 ADD https://github.com/nomovok-opensource/cutedriver-sut_qt/archive/master.tar.gz sut-qt.tar.gz
 
 RUN \
-apk --update add --no-cache ruby ruby-libs ruby-json ruby-dev libxml2 libstdc++ libgcc gmp zlib; \
-apk add --virtual build_deps ruby-bundler g++ ruby-doc ruby-rake gcc zlib-dev gmp-dev patch make; \
+apk --update add --no-cache ruby ruby-libs imagemagick ruby-json ruby-dev libxml2 libstdc++ libgcc gmp zlib; \
+apk add --virtual build_deps ruby-bundler g++ ruby-doc ruby-rake gcc zlib-dev imagemagick-dev gmp-dev patch make; \
 gem install nokogiri; \
+gem install rmagick; \
 tar -xzf driver.tar.gz; \
 cd cutedriver-driver-master; \
 rake gem; \
