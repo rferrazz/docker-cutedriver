@@ -1,0 +1,9 @@
+
+<parameters>
+	<sut id="sut_qt" template="qt">
+		<!-- hostname of the device where the application is executed -->
+		<parameter name="qttas_server_ip" value="target" />
+	</sut>
+
+	<parameter name="behaviours" value="behaviours.xml"/>
+</parameters>

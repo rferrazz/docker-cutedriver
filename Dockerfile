@@ -27,4 +27,6 @@ rm -f sut-qt.tar.gz && \
 rm -rf cutedriver-sut_qt-master && \
 apk del build_deps;
 
+COPY parameters.xml /etc/tdriver/tdriver_parameters.xml
+
 ENTRYPOINT ["ruby"]
